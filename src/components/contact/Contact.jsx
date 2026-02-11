@@ -54,20 +54,19 @@ const Contact = () => {
       initial="initial"
       whileInView="animate"
     >
-        {/* TODO: change the contact info to be relevant to the user */}
       <motion.div className="textContainer" variants={variants}>
         <motion.h1 variants={variants}>How to Reach me?</motion.h1>
         <motion.div className="item" variants={variants}>
+          <h2>Website</h2>
+          <span><a href="https://anveshanayak.github.io" target="_blank" rel="noopener noreferrer">anveshanayak.github.io</a></span>
+        </motion.div>
+        <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>hello@react.dev</span>
+          <span><a href="mailto:anveshalnayak@gmail.com">anveshalnayak@gmail.com</a></span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Address</h2>
-          <span>Hello street New York</span>
-        </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
-          <span>+1 234 5678</span>
+          <h2>LinkedIn</h2>
+          <span><a href="https://www.linkedin.com/in/anveshanayak" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/anveshanayak</a></span> 
         </motion.div>
       </motion.div>
       <div className="formContainer">
@@ -75,7 +74,7 @@ const Contact = () => {
           className="phoneSvg"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
-          transition={{ delay: 3, duration: 1 }}
+          transition={{ delay: 2, duration: 1 }}
         >
           <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
             <motion.path
@@ -105,7 +104,7 @@ const Contact = () => {
           onSubmit={sendEmail}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 4, duration: 1 }}
+          transition={{ delay: 3, duration: 1 }}
         >
           <input type="text" required placeholder="Name" name="name"/>
           <input type="email" required placeholder="Email" name="email"/>

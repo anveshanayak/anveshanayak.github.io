@@ -1,0 +1,90 @@
+.projects-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  font-family: "DM Sans", sans-serif;
+  
+
+  .projects-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    .projects-label {
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rebeccapurple;
+      letter-spacing: 10px;
+      font-family: "DM Mono", monospace;
+    }
+
+    .back-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.6);
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-family: "DM Sans", sans-serif;
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+      width: 100px;
+
+      &:hover {
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.25);
+      }
+    }
+  }
+
+  .projects-header {
+    text-align: center;
+    padding: 64px 24px 48px;
+
+    .projects-heading {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      color: #e8e8f0;
+      margin: 0;
+      line-height: 1.15;
+
+      .gradient-text {
+        background: linear-gradient(120deg, #818cf8, #5eead4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px 80px;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+      padding: 0 20px 60px;
+    }
+  }
+
+  
+}

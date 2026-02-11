@@ -1,25 +1,21 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/projects/ScrollToTop"; 
+import MainPage from "./pages/mainPage/MainPage";
+import ResumePage from "./pages/resumePage/ResumePage";
+import ProjectsPage from "./pages/projectsPage/ProjectsPage";
 import "./app.scss";
-import Contact from "./components/contact/Contact";
-import Hero from "./components/hero/Hero";
-import Navbar from "./components/navbar/Navbar";
-import Parallax from "./components/parallax/Parallax";
-import Projects from "./components/projects/Projects";
 
-const App = () => {
-  return <div>
-    <section id="Homepage">
-      <Navbar />
-      <Hero />
-    </section>
-    {/* <section id="About">About</section> */}
-    <section id="Projects">
-      <Parallax />
-    </section>
-    <Projects />
-    <section id="Contact">
-      <Contact />
-    </section>
-  </div>;
-};
+function App() {
+  return (
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/resume" element={<ResumePage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
 export default App;

@@ -1,6 +1,6 @@
 @import "../../app.scss";
 
-.portfolio {
+.projects {
   position: relative;
 
   .progress {
@@ -9,15 +9,17 @@
     left: 0;
     padding-top: 50px;
     text-align: center;
-    color: rgb(138, 75, 201);
+    color: rebeccapurple;
+    text-transform: uppercase;
+    letter-spacing: 5px;
     font-size: 25px;
 
     .progressBar {
-      height: 10px;
-      background-color: white;
+      height: 5px;
+      background: linear-gradient(180deg, #474e8e, #5eead4);
     }
   }
-
+  
   .container {
     display: flex;
     align-items: center;
@@ -38,9 +40,11 @@
       .imageContainer {
         flex: 1;
         height: 50%;
-
+        margin-left: 40px;
+        margin-top: 50px;
 
         img {
+          margin-top: 5%;
           width: 100%;
           height: 100%;
           object-fit: cover;
@@ -55,18 +59,20 @@
         gap: 30px;
 
         h2 {
-          font-size: 50px;
+          font-size: 40px;
+          color: rgb(255, 255, 255)
 
         }
 
         p {
           color: gray;
-          font-size: 20px;
-
+          font-size: 18px;
+          margin-right: 40px;
         }
 
         button {
-          background-color: rgb(138, 75, 201);
+          align-items: center;
+          background: linear-gradient(135deg, #409ed1, #7c3aed);
           border: none;
           border-radius: 10px;
           padding: 10px;
@@ -76,4 +82,37 @@
       }
     }
   }
+  
+  .see-more-text {
+      font-size: 30px;
+      color: gray;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+  .viewAll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0 80px;
+
+    .viewAllBtn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 36px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      font-family: "DM Sans", sans-serif;
+      letter-spacing: 0.03em;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+  }
 }
+

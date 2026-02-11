@@ -1,0 +1,25 @@
+.resume-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    align-items: center;
+
+    .resume-button{
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 13px 32px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #409ed1, #7c3aed);
+        color: #fff;
+        font-size: 0.88rem;
+        font-weight: 600;
+        font-family: "DM Sans";
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    
+}

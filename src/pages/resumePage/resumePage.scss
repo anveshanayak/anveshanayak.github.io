@@ -1,0 +1,79 @@
+.resume-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  display: flex;
+  flex-direction: column;
+  font-family: "DM Sans", sans-serif;
+
+  .resume-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    .resume-title {
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.3);
+      font-family: "DM Mono", monospace;
+    }
+
+    .back-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.6);
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-family: "DM Sans", sans-serif;
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+
+      &:hover {
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.25);
+      }
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: #fff;
+      padding: 9px 22px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      font-family: "DM Sans", sans-serif;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  .resume-viewer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 40px 24px;
+
+    .resume-iframe {
+      width: 100%;
+      max-width: 860px;
+      height: calc(100vh - 140px);
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+    }
+  }
+}

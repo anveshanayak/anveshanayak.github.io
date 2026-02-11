@@ -24,7 +24,7 @@ const itemVariants = {
   },
 };
 
-const Links = () => {
+const Links = ({setOpen}) => {
 
     const items = [
         "Homepage",
@@ -36,7 +36,7 @@ const Links = () => {
     return (
     <motion.div className="links" variants={variants}>
       {items.map((item) => (
-        <motion.a
+        <motion.a onClick={() => setOpen(prev=>!prev)}
           href={`#${item}`}
           key={item}
           variants={itemVariants}
