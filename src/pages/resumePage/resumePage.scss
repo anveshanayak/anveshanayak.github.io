@@ -18,11 +18,12 @@
     z-index: 10;
 
     .resume-title {
-      font-size: 0.8rem;
-      letter-spacing: 0.2em;
+      font-size: 30px;
+      letter-spacing: 7px;
+      font-weight: bold;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.3);
-      font-family: "DM Mono", monospace;
+      color: rebeccapurple;
+      font-family: "DM Sans";
     }
 
     .back-btn {
