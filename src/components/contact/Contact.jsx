@@ -31,10 +31,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
+        "service_303akjl",
+        "template_b820uwm",
         formRef.current,
-        "pX_2hasGmGcuvjXIW"
+        "6agpp5QB6sS9p4XSM"
       )
       .then(
         (result) => {
@@ -106,8 +106,8 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 3, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name"/>
-          <input type="email" required placeholder="Email" name="email"/>
+          <input type="text" required placeholder="Name" name="from_name"/>
+          <input type="email" required placeholder="Email" name="reply_to"/>
           <textarea rows={8} placeholder="Message" name="message"/>
           <button>Submit</button>
           {error && "Error"}

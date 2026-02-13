@@ -1,15 +1,17 @@
 @import "../../app.scss";
 
 .hero {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 20%);
   overflow: hidden;
   background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
 
   .wrapper {
-    max-width: 1200px;
-    height: 100%;
-    margin: auto;
+    max-width: 100%;
+    height: 95%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
 
     .textContainer {
       width: 50%;
@@ -17,21 +19,20 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 40px;
-
+      gap: 20px;
 
       h2 {
-        font-size: 50px;
+        font-size: 250%;
         color: rebeccapurple;
         letter-spacing: 10px;
       }
 
       h1 {
-        font-size: 20px;
+        font-size: 150%;
       }
 
       h3{
-        font-size: 15px;
+        font-size: 100%;
         font-weight: 500;
         color: rebeccapurple;
 
@@ -39,13 +40,14 @@
 
       .buttons {
         button {
-          padding: 20px;
+          padding: 3%;
           border: 1px solid white;
           border-radius: 10px;
           background-color: transparent;
           color: white;
-          margin-right: 20px;
+          margin-right: 3%;
           cursor: pointer;
+          font-size: 70%;
           font-weight: 300;
         }
       }
@@ -61,26 +63,29 @@
 
       .icons{
         img{
-          width: 20px;
-          height: 20px;
+          height: 15px;
+          width: 15px;
         }
       }
     }
+    
   }
 
   .imageContainer {
-    height: 100%;
+    width: 300px;
+    height: 300px;
+    left: 67%;
+    top: 25%;
     position: absolute;
-    top: 0;
-    right: 40px;
-
+    
     img{
-      width: 100%;
-      height: 100%;
+      width: 80%;
+      height: 80%;
       border-radius: 35%;
       object-fit: cover;
+      }
     }
-  }
+  
 
   .slidingTextContainer {
     pointer-events: none;
